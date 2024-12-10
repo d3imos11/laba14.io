@@ -1,0 +1,87 @@
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</head>
+    <div class="main" id="main">
+      <div class="head">
+        <img class="Avatar" src="https://sun9-65.userapi.com/impg/JUCnc31FOC_5c3_m2tR_SWh-shxw-pNiZHWiIw/UPFjGEuYZxc.jpg?size=736x736&quality=95&sign=199f4bbf729f564d955a6bcf09dd87e2&type=album" />
+        <div class="nameBox">
+          <div class="greetingPhrase">Привет! Я</div>
+          <div class="yourInfo">
+            <div class="name" onclick="changetext(this)">Сыркин Дмитрий</div>
+            <div class="role" onclick="changetext(this)">Студент СибГУТИ группы ИА-332</div>
+          </div>
+        </div>
+        <div class="languagesBox">
+          <div class="title">Языки:</div>
+          <div class="english" onclick="changeLanguage(this)">
+            Английский
+            <img
+              class="engflag" id= "flag"
+              src="https://www.a1flags.com.au/images/Catalogue/Flag/uk---.svg"
+              alt="Флаг Англии"
+            />
+          </div>
+          <div class="russian" onclick="changeLanguage(this)">
+            Русский
+            <img
+              class="rusflag" id="flag"
+              src="https://sc24-surgut.gosuslugi.ru/netcat_files/userfiles/Ofitsal_no/Flag_Rossii_1_.jpg"
+              alt="Флаг России"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="body">
+        <div class="expBox">
+          <div class="title">Опыт</div>
+          <div class="exp" onclick="changetext(this)">
+            На 1 курсе обучения в СИБГУТИ познакомился с такими языками программирования, как C, C++. Есть опыт работы с гитхабом, Cisco и Figma. В 3 семестре начал изучение HTML, CSS и Java Script.
+          </div>
+        </div>
+        <div class="toolsBox">
+          <div class="title">Навыки</div>
+          <div class="tools">
+            <ul>
+              <li onclick="changeLi(this)"><span>Python</span></li>
+              <li onclick="changeLi(this)"><span>C++</span></li>
+              <li onclick="changeLi(this)"><span>C</span></li>
+              <li onclick="changeLi(this)"><span>GitHub</span></li>
+              <li onclick="changeLi(this)"><span>HTML+CSS+JS</span></li>
+              <li onclick="changeLi(this)"><span>Figma</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="foot">
+        <div class="educationBox">
+          <div class="title">Образование</div>
+          <div class="schoolBox">
+            <div class="school" onclick="changetext(this)">Среднее общее образование МКОУ КСШ №1</div>
+          </div>
+          <div class="schoolBox">
+            <div class="school" onclick="changetext(this)">СибГУТИ ИВТ Программное обеспечение мобильных сетей 2 курс</div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="interestsBox">
+            <div class="title">Интересы</div>
+            <ul>
+              <li onclick="changeLi(this)"><span>Программирование</span></li>
+              <li onclick="changeLi(this)"><span>Хоккей</span></li>
+              <li onclick="changeLi(this)"><span>Пауэрлифтинг</span></li>
+              <li onclick="changeLi(this)"><span></span>Искусственный интеллект</li>
+            </ul>
+          </div>
+          <div class="contactBox">
+            <div class="title">Контакты</div>
+            <div class="contactText">Номер телефона:</div>
+            <div class="phoneNumber" onclick="changetext(this)">+7(913)712-12-94</div>
+            <div class="contactText">Почта:</div>
+            <div class="email" onclick="changetext(this)">l3br0n.lb@gmail.com</div>
+          </div>
+        </div>
+      </div>
+      <div class="PDFbutton">
+        <button onclick="captureImage()">Скачать</button>
+      </div>
+    </div>
